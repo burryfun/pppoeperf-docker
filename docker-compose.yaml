@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  app:
+    image: burryfun/pppoeperf
+    cap_add: ALL
+    network_mode: host
+    volumes: /lib/modules:/lib/modules
+    command: "--privileged"
